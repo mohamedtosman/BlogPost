@@ -70,7 +70,8 @@ INSERT INTO post(`title`, `content`, `date_created`) VALUES('Third title',
 ## Apache
 Create a virtual host for Apache to execute the app locally. Fill in username with your path.
 
-`<VirtualHost *:80>
+```
+<VirtualHost *:80>
 
      DocumentRoot "/Users/<username>/Sites/blog/public"
      
@@ -86,7 +87,8 @@ Create a virtual host for Apache to execute the app locally. Fill in username wi
          
      </Directory>
      
- </VirtualHost>`
+ </VirtualHost>
+ ```
  
 Restart Apache server and you should be able to view the app at "http://localhost/".
 
