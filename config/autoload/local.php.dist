@@ -9,8 +9,8 @@ return [
                 'params' => [
                     'host'     => '127.0.0.1',
                     'user'     => 'blog',
-                    'password' => 'root',
-                    'dbname'   => 'blog',
+                    'password' => '<password>',
+                    'dbname'   => '<database name>',
                 ]
             ],
         ],
