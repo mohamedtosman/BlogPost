@@ -71,13 +71,21 @@ INSERT INTO post(`title`, `content`, `date_created`) VALUES('Third title',
 Create a virtual host for Apache to execute the app locally. Fill in username with your path.
 
 `<VirtualHost *:80>
+
      DocumentRoot "/Users/<username>/Sites/blog/public"
+     
      <Directory "/Users/<username>/Sites/blog/public">
+     
          DirectoryIndex index.php
+         
          AllowOverride All
+         
          Options Indexes MultiViews FollowSymLinks
+         
          Require all granted
+         
      </Directory>
+     
  </VirtualHost>`
  
 Restart Apache server and you should be able to view the app at "http://localhost/".
